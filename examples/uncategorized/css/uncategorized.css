@@ -1,0 +1,16 @@
+.uncategorized-map {
+	height: 400px;
+	position: relative;
+}
+
+.google-map {
+	height: 400px;
+}
+
+.google-map .gm-style-iw h4 {
+	margin-top: 0;
+}
+
+.google-map .gm-style-iw a {
+	color: @font-color-blue;
+}

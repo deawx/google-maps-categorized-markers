@@ -1,0 +1,13 @@
+{
+  "name": "categorizable-map",
+  "version": "1.0",
+  "description": "A very opinionated implementation to display a categorized list of location markers in a Google Map.",
+  "author": "Derek MacDonald <derekmd@hotmail.com>",
+  "homepage": "http://derekmd.com/",
+  "license": "MIT",
+  "files": [
+    './src/Class.js',
+    './src/MobileTouchDisabler.js',
+    './src/CategorizableMap.js'
+  ],
+}

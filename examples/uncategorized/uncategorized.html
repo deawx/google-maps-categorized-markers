@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Uncategorized Location - Google Maps Categorizable Markers</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/uncategorized.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="uncategorized-map">
+    <div class="google-map"></div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Replace AIzaSyBZWROu2McODk1fFeC1BZsiIcQ6T1yLB5o below with your own API key for Google Maps JavaScript API v3 -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZWROu2McODk1fFeC1BZsiIcQ6T1yLB5o&amp;sensor=false"></script>
+<script src="../../dist/categorizable-map.min.js"></script>
+<script>
+$(function() {
+    var marker = {
+        lat: -37.8182711,
+        lng: 144.9670618,
+        object: {
+            name: "G'day"
+        }
+    };
+
+    var uncategorizedMap = new CategorizableMap('.google-map', {
+        latLng: new google.maps.LatLng(marker.lat, marker.lng), // auto-center
+        zoom: 9
+    });
+
+    uncategorizedMap.addMarker(
+        marker.lat,
+        marker.lng,
+        marker.object,
+        true // visible upon map load
+    );
+});
+</script>
+
+</body>
+</html>
