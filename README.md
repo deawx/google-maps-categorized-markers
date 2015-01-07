@@ -165,7 +165,7 @@ MIT
 
 ### Credits
 
-* [Derek MacDonald] ([@derekmdcom])
+* [Derek MacDonald] - [@derekmdcom]
 * Uses John Resig's [Simple JavaScript Inheritance model]
 
 [jQuery 1.8+]:https://developers.google.com/speed/libraries/devguide#jquery
