@@ -1,13 +1,24 @@
 {
   "name": "categorizable-map",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "A very opinionated implementation to display a categorized list of location markers in a Google Map.",
   "author": "Derek MacDonald <derekmd@hotmail.com>",
   "homepage": "http://derekmd.com/",
   "license": "MIT",
   "files": [
-    './src/Class.js',
-    './src/MobileTouchDisabler.js',
-    './src/CategorizableMap.js'
+    "./src/Class.js",
+    "./src/MobileTouchDisabler.js",
+    "./src/CategorizableMap.js"
   ],
+  "devDependencies": {
+    "gulp-concat": "^2.4.3",
+    "gulp-header": "^1.2.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.2",
+    "gulp-watch": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/derekmd/google-maps-categorized-markers.git"
+  }
 }

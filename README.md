@@ -106,10 +106,6 @@ the important `CategorizableMap` class methods to keep in mind:
   - `addMarker(lat, lng, location)`
   - `addMarker(lat, lng, location, visible)`
   - `addMarker(lat, lng, location, visible, animation)`
-* `initializeEvents()`
-
-  Invoked when each tile in the map has loaded. Useful for binding
-  category controller events.
 * `zoomToMarkers()`
 
   Fit map's zoom and alignment to display all markers selected for view.
@@ -142,16 +138,10 @@ If you wish to fork this project to modify the underlying base classes, from
 the project root:
 
 * Install [npm]
-* move `package.json` out of the project root directory (or else the npm will
-  attempt to use it as gulp's local configuration)
 * Install [gulp]
   - `npm install --global gulp`
-  - `npm install --save-dev gulp`
-  - `npm install --save-dev gulp-concat`
-  - `npm install --save-dev gulp-header`
-  - `npm install --save-dev gulp-uglify`
-  - `npm install --save-dev gulp-rename`
-* move `package.json` back to the project's root
+* Install gulp dependencies for this project:
+  - `npm update`
 * From the project root, run `gulp` which will concatenate and minify to
   `dist/categorizable-map.min.js`
 
