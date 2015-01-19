@@ -144,6 +144,7 @@ the project root:
   - `npm update`
 * From the project root, run `gulp` which will concatenate and minify to
   `dist/categorizable-map.min.js`
+* For development, run `gulp watch` to auto-build upon file modifications.
 
 If you add new `src/` files to the build process, also add their path to the
 `files` property in project root file `package.json`.
