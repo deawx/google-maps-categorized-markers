@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var header = require('gulp-header');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var watch = require('gulp-watch');
 
 var pkg = require('./package.json');
 
@@ -27,6 +28,13 @@ gulp.task('build-js', function() {
 });
 
 // Auto-build when .js files are modified.
-gulp.task('default', ['build-js'], function() {
-  gulp.watch(pkg.files, ['build-js']);
+gulp.task('watch', function() {
+  gulp.src(pkg.files)
+    .pipe(watch(pkg.files, function () {
+      gulp.start('build-js');
+    }));
+});
+
+gulp.task('default', function() {
+  gulp.start('build-js');
 });
