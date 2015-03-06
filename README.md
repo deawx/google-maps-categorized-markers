@@ -156,7 +156,7 @@ MIT
 
 ### Credits
 
-* [Derek MacDonald] - [@derekmdcom]
+* [Derek MacDonald] - [@derekmd_]
 * Uses John Resig's [Simple JavaScript Inheritance model]
 
 [jQuery 1.8+]:https://developers.google.com/speed/libraries/devguide#jquery
@@ -169,4 +169,4 @@ MIT
 [npm]:https://github.com/npm/npm
 [gulp]:https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 [Derek MacDonald]:http://derekmd.com/
-[@derekmdcom]:https://twitter.com/derekmdcom
+[@derekmd_]:https://twitter.com/derekmd_
